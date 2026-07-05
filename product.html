@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Details</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+<a class="navbar-brand logo" href="index.html">
+<img src="pc.png" class="img-_-logo">
+</a>
+
+<ul class="navbar-nav ms-auto align-items-center">
+
+<li class="nav-item"><a class="nav-link nav-btn" href="index.html">Home</a></li>
+<li class="nav-item">
+<a class="nav-link nav-btn" href="shop.html">Our Shop</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-btn" href="product.html">Product Details</a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-btn" href="leaderboard.html">Leaderboard</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<section class="hero text-center reveal">
+
+<div class="container">
+
+<h1>CRIMSON Bundles</h1>
+
+<p>Choose the package that suits your gameplay.</p>
+
+</div>
+
+</section>
+
+<section class="trending reveal">
+
+<div class="container">
+
+<div class="row g-4">
+
+<!-- BRONZE -->
+
+<div class="col-lg-4">
+<div class="game-card">
+
+<h6>BRONZE PACKAGE</h6>
+
+<h2 style="color:#cd7f32;">$59</h2>
+
+<hr>
+
+<p>✔ 2 Vehicles</p>
+<p>✔ 5 Mk II</p>
+<p>✔ 10 Ammo</p>
+<p>✔ 3 Armor</p>
+
+<button class="buy-btn5" onclick="openBuyModal()">
+    BUY NOW
+</button>
+</div>
+</div>
+
+<!-- SILVER -->
+
+<div class="col-lg-4">
+<div class="game-card">
+
+<h6>SILVER PACKAGE</h6>
+
+<h2 style="color:#c0c0c0;">$89</h2>
+
+<hr>
+
+<p>✔ 4 Vehicles</p>
+<p>✔ 10 Mk II</p>
+<p>✔ 20 Ammo</p>
+<p>✔ 5 Armor</p>
+
+<button class="buy-btn4" onclick="openBuyModal()">
+    BUY NOW
+</button>
+
+</div>
+</div>
+
+<!-- GOLD -->
+
+<div class="col-lg-4">
+<div class="game-card">
+
+<h6>GOLD PACKAGE</h6>
+
+<h2 style="color:#ffd700;">$129</h2>
+
+<hr>
+
+<p>✔ 6 Vehicles</p>
+<p>✔ 15 Mk II  </p>
+<p>✔ 25 Ammo   </p>
+<p>✔ 10 Armor  </p>
+
+<button class="buy-btn3" onclick="openBuyModal()">
+    BUY NOW
+</button>
+</div>
+</div>
+
+<!-- DIAMOND -->
+
+<div class="package-card package-diamond">
+
+<div class="package-badge">
+BEST SELLER
+</div>
+
+<h6>DIAMOND PACKAGE</h6>
+
+<h2 style="color:#66e0ff;">
+$199
+</h2>
+
+<hr>
+
+<p>✔ 10 Vehicles</p>
+<p>✔ 20 Mk II</p>
+<p>✔ 30 Ammo</p>
+<p>✔ 15 Armor</p>
+
+<button class="buy-btn2" onclick="openBuyModal()">
+    BUY NOW
+</button>
+
+</div>
+
+<!-- FOR FUN -->
+
+<div class="package-card package-fun">
+<div class="package-badge1">
+FOR FUN !</div>
+<h6>FOR FUN PACKAGE</h6>
+
+<h2 style="color:#ff4d4d;">
+$55
+</h2>
+
+<hr>
+
+<div class="row">
+
+<div class="col-4">
+<img src="Isse Arena .png"
+style="width:100%;border-radius:10px;">
+<p style="margin-top:10px;">
+Issi Arena
+</p>
+</div>
+
+<div class="col-4">
+<img src="Isse Future Shock.png"
+style="width:100%;border-radius:10px;">
+<p style="margin-top:10px;">
+Issi Future Shock
+</p>
+</div>
+
+<div class="col-4">
+<img src="Isse nightmare.png"
+style="width:100%;border-radius:10px;">
+<p style="margin-top:10px;">
+Issi Nightmare
+</p>
+</div>
+
+</div>
+
+<p style="color:#ff9a9a;margin-top:20px;">
+Perfect for events, drifting and fun gameplay.
+</p>
+
+<button class="buy-btn1" onclick="openBuyModal()">
+    BUY NOW
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BUY POPUP -->
+
+<div class="buy-modal" id="buyModal">
+
+    <div class="buy-box">
+
+        <h2>شراء المنتج</h2>
+
+        <p>
+            لإتمام عملية شراء هذا المنتج يرجى فتح تذكرة في ديسكورد كريمسون.
+        </p>
+
+        <a href="https://discord.gg/example"
+           target="_blank"
+           class="ticket-btn">
+            اضغط هنا لفتح تذكرة
+        </a>
+
+        <button class="cancel-btn"
+                onclick="closeBuyModal()">
+            إلغاء
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+function openBuyModal(){
+    document.getElementById("buyModal").style.display = "flex";
+}
+
+function closeBuyModal(){
+    document.getElementById("buyModal").style.display = "none";
+}
+</script>
+ <div class="footer-links">
+
+    <a href="index.html">HOME</a>
+
+    <a href="shop.html">SHOP</a>
+
+    <a href="leaderboard.html">LEADERBOARD</a>
+
+    <a href="crules.html">CITY RULES</a>
+
+    <a href="prules.html">POLICE</a>
+
+    <a href="gtules.html">GANGS</a>
+
+    <a href="srules.html">STORE RULES</a>
+
+    <a href="product.html">Product Details</a>
+    
+    <a href="gallery.html">Crimson Gallery</a>
+
+    <a href="https://discord.gg/cmzrp" target="_blank">
+        DISCORD
+    </a>
+
+</div>
+<script>
+    const observer = new IntersectionObserver(
+entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".reveal")
+.forEach(el=>observer.observe(el));
+</script>
+<script>
+
+const reveals =
+document.querySelectorAll('.reveal');
+
+function revealElements(){
+
+    reveals.forEach(el=>{
+
+        const top =
+        el.getBoundingClientRect().top;
+
+        const trigger =
+        window.innerHeight - 100;
+
+        if(top < trigger){
+
+            el.classList.add('active');
+
+        }
+
+    });
+
+}
+
+window.addEventListener(
+    'scroll',
+    revealElements
+);
+
+window.addEventListener(
+    'load',
+    revealElements
+);
+
+</script>
+</body>
+</html>
